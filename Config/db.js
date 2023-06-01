@@ -3,7 +3,7 @@ const Url = "mongodb:aftab:123@ac-lpccfqq-shard-00-00.s863v4d.mongodb.net:27017,
 const connectDB = async () => {
       console.log("mongoose url", Url);
       try {
-            const conn = await mongoose.connect(process.env.URL, {
+            const conn = await mongoose.connect(Url, {
                   useUnifiedTopology: true,
                   useNewUrlParser: true,
             });
