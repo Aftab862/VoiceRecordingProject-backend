@@ -27,4 +27,9 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use("/api", crudVoiceRoutes);
 
+app.get("/", (req, res) => {
+      res.send("Its working perfect")
+})
+
+
 app.listen(port, () => console.log(`Server is running on port ${port}`));
