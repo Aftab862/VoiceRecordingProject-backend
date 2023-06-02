@@ -11,6 +11,7 @@ const RecordingList = async (req, res) => {
 
 
 const SaveRecordings = async (req, res) => {
+      console.log("saving")
       try {
             const { filename, path } = req.file;
             console.log("data", req.file)
